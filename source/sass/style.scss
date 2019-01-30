@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i');
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$verde-padrao: #2dde82;
+$cinza-padrao: #57575b;
+$cinza-p: #bdbec2;
+
+$azul-b: #32c8bb;
+$azul-e: #2b50aa;
+$branco: #fff;
+$preto: #000;
+$cinza-claro: #1d2026;
+$titulo: #181a1f;
+$azul-navy: #008167;
+$azul-claro: #f9f9f9;
+
+@import "animacao";
+@import "padrao";
+@import "header";
+@import "hero";
+@import "sobre";
+@import "owl";
+@import "owl-theme";
+
+.shrink {
+  border-bottom: 2px solid #e8e8e8;
+}

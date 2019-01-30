@@ -1,0 +1,133 @@
+.hero-section {
+  @extend .col-12;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__title {
+    @extend .col-12;
+    padding: 0;
+    padding-top: 13rem;
+    color: $cinza-padrao;
+
+    a {
+      padding: 15px 30px;
+      background: #30e66c;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #30e66c 0%, #1ebce5 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #30e66c 0%, #1ebce5 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #30e66c 0%, #1ebce5 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#30e66c', endColorstr='#1ebce5', GradientType=1);
+      font-weight: 600;
+      font-size: .8em;
+      text-align: center;
+      letter-spacing: 1px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      color: $branco;
+      text-decoration: none;
+
+      &:hover {
+        background: transparent;
+        border: 1px solid $cinza-padrao;
+        color: $cinza-padrao;
+        @include anima-slow()
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.7em;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: .9em;
+      padding-bottom: 20px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  &__img {
+    @extend .col-12;
+    padding: 0;
+    display: none;
+
+
+    img {
+      @extend .img-fluid;
+    }
+  }
+
+  @media(min-width:map-get($grid-breakpoints, md)) {
+
+    &__title {
+      @include make-col(6);
+      padding-top: 15rem;
+
+      h2 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    &__img {
+      @include make-col(6);
+      display: inherit;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: -100px;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  @media(min-width:map-get($grid-breakpoints, lg)) {
+    &__title {
+      padding-top: 13rem;
+
+      h2 {
+        font-size: 2.5em;
+      }
+    }
+
+  }
+
+  @media(min-width: map-get($grid-breakpoints, xl)) {
+    &__title {
+      padding-top: 15rem;
+    }
+
+    &__img {
+      bottom: -150px;
+    }
+  }
+
+
+  @media(min-width: 1920px) {
+
+    &__title {
+      padding-top: 15rem;
+
+      h2 {
+        font-size: 3em;
+      }
+    }
+
+  }
+}

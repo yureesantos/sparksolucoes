@@ -1,0 +1,40 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "projeto final do curso certificação Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "curso",
+    "certificação",
+    "bootstrap"
+  ],
+  "author": "Luis Felipe",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-svg-sprite": "^1.3.7",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-uglify": "^2.1.2"
+  },
+  "dependencies": {
+    "svgspriter": "^1.0.6"
+  }
+}

@@ -1,0 +1,125 @@
+.servicos {
+  @extend .col-12;
+  padding: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__title {
+    @extend .col-12;
+    padding: 0;
+    color: $cinza-padrao;
+
+    .welcome {
+      padding: 4px 14px;
+      border-radius: 5px;
+      background-color: rgba(45, 222, 130, 0.1);
+      text-transform: uppercase;
+      color: $verde-padrao;
+      font-size: .8em;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 1.7em;
+      margin-top: 1rem;
+    }
+
+    i {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+
+    .tagline {
+      font-size: .9em;
+      font-weight: 300;
+      padding-bottom: 20px;
+      color: $cinza-padrao;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .missao-visao {
+    @extend .col-12;
+    color: $cinza-padrao;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    .servicos__item {
+      @extend .col-12;
+      padding-top: 2.5rem;
+
+      .nome {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+
+        img {
+          object-fit: contain;
+          width: 50px;
+          height: 50px;
+        }
+
+        h4 {
+          font-weight: 600;
+          margin: 0;
+          margin-left: 10px;
+        }
+      }
+
+      .descricao {
+
+        p {
+          font-size: .9em;
+          font-weight: 300;
+          color: $cinza-padrao;
+        }
+      }
+    }
+  }
+
+
+  @media(min-width:map-get($grid-breakpoints, md)) {
+    &__title {
+      @include make-col(12);
+    }
+
+    .missao-visao {
+      .servicos__item {
+        @include make-col(6);
+      }
+    }
+  }
+
+  @media(min-width:map-get($grid-breakpoints, lg)) {
+    &__title {
+      @include make-col(4);
+    }
+
+    .missao-visao {
+
+
+      @include make-col(8);
+      max-width: calc(66.66667% - 3rem);
+      margin-left: 3rem;
+
+
+
+
+      .servicos__item {
+        max-width: calc(50% - 2rem);
+        margin-right: 2rem;
+        padding-top: 1rem;
+        margin-right: 0;
+      }
+
+    }
+  }
+
+
+}
