@@ -1,14 +1,14 @@
 .hero-section {
   @extend .col-12;
   padding: 0;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-wrap: wrap;
 
   &__title {
     @extend .col-12;
     padding: 0;
-    padding-top: 13rem;
+    padding-top: 10rem;
     color: $cinza-padrao;
 
     a {
@@ -55,6 +55,12 @@
     strong {
       font-weight: 600;
     }
+
+    .about {
+      color: $cinza-p;
+      padding-top: 1rem;
+      font-size: .7em;
+    }
   }
 
   &__img {
@@ -69,13 +75,14 @@
   }
 
   @media(min-width:map-get($grid-breakpoints, md)) {
+    height: 100vh;
 
     &__title {
       @include make-col(6);
-      padding-top: 15rem;
+      padding-top: 13rem;
 
       h2 {
-        font-size: 2em;
+        font-size: 1.8em;
       }
 
       p {
@@ -98,6 +105,8 @@
   }
 
   @media(min-width:map-get($grid-breakpoints, lg)) {
+    margin-bottom: 4rem;
+
     &__title {
       padding-top: 13rem;
 

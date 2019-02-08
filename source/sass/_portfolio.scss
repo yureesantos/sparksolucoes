@@ -1,8 +1,9 @@
-.servicos {
+.portfolio {
   @extend .col-12;
   padding: 0;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background: #fafafa;
 
   &__title {
     @extend .col-12;
@@ -12,9 +13,9 @@
     .welcome {
       padding: 4px 14px;
       border-radius: 100px;
-      background-color: rgba(45, 222, 130, 0.1);
+      background-color: rgba(30, 188, 229, 0.1);
       text-transform: uppercase;
-      color: $verde-padrao;
+      color: $azul-padrao;
       font-size: 0.8em;
       font-weight: 500;
       letter-spacing: 1px;
@@ -42,43 +43,70 @@
     }
   }
 
-  .missao-visao {
+  &__conteudo {
     @extend .col-12;
-    color: $cinza-padrao;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    padding: 0;
+    padding-top: 4rem;
 
-    .servicos__item {
+    .item {
       @extend .col-12;
-      padding-top: 2.5rem;
+      padding: 0;
 
-      .nome {
-        display: flex;
-        align-items: flex-end;
-        margin-bottom: 1rem;
+
+      .img {
+        padding-bottom: 0;
+
 
         img {
-          object-fit: contain;
-          width: 50px;
-          height: 50px;
-        }
-
-        h4 {
-          font-size: 1.3em;
-          font-weight: 600;
-          margin: 0;
-          margin-left: 10px;
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          transform: scale(1);
+          transition: all .5s;
+          width: 100%;
         }
       }
 
-      .descricao {
+      .info {
+        padding: 1rem;
+        padding-top: 3rem;
+        background-color: $branco;
+
+        h3 {
+          font-weight: bold;
+          font-size: 1.2em;
+          color: $cinza-padrao;
+        }
+
         p {
-          font-size: 0.9em;
           font-weight: 300;
+          font-size: .8em;
           color: $cinza-padrao;
         }
       }
+
+      .link {
+        padding: 1rem;
+        background: $branco;
+        border-top: 1px solid rgba(238, 238, 238, .8);
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: $cinza-padrao;
+          font-size: .8em;
+
+          i {
+            color: $verde-padrao;
+          }
+
+          &:hover {
+            color: $cinza-p;
+            cursor: pointer;
+          }
+        }
+      }
+
     }
   }
 
@@ -87,11 +115,6 @@
       @include make-col(12);
     }
 
-    .missao-visao {
-      .servicos__item {
-        @include make-col(8);
-      }
-    }
   }
 
   @media (min-width: map-get($grid-breakpoints, lg)) {
@@ -99,16 +122,10 @@
       @include make-col(4);
     }
 
-    .missao-visao {
+    &__conteudo {
       @include make-col(7);
       margin-left: percentage(1/12);
-      display: flex;
-      flex-wrap: wrap;
-
-
-      .servicos__item {
-        @include make-col(4);
-      }
+      padding-top: 0;
     }
   }
 }

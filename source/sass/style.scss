@@ -3,26 +3,199 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 $verde-padrao: #2dde82;
+$azul-padrao: #1ebce5;
 $cinza-padrao: #57575b;
 $cinza-p: #bdbec2;
+$neutro: #f9f9f9;
 
-$azul-b: #32c8bb;
-$azul-e: #2b50aa;
+
 $branco: #fff;
 $preto: #000;
 $cinza-claro: #1d2026;
-$titulo: #181a1f;
-$azul-navy: #008167;
-$azul-claro: #f9f9f9;
 
 @import "animacao";
 @import "padrao";
 @import "header";
 @import "hero";
 @import "sobre";
+@import "servicos";
+@import "processo";
+@import "portfolio";
 @import "owl";
 @import "owl-theme";
 
 .shrink {
   border-bottom: 2px solid #e8e8e8;
+}
+
+.contato {
+  @extend .col-12;
+  padding: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__title {
+    @extend .col-12;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: $cinza-padrao;
+
+    h2 {
+      font-weight: 600;
+      font-size: 1.7em;
+      margin-top: 1rem;
+    }
+
+    i {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .tagline {
+      font-size: 0.9em;
+      font-weight: 300;
+      padding-top: 1rem;
+      padding-bottom: 20px;
+      color: $cinza-padrao;
+      margin-bottom: 0;
+    }
+
+    .contato {
+      padding: 4px 14px;
+      border-radius: 100px;
+      background-color: rgba(45, 222, 130, 0.1);
+      text-transform: uppercase;
+      color: $verde-padrao;
+      font-size: .8em;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__form {
+    @extend .col-12;
+    padding: 0;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      background-color: #eee;
+      border-radius: 6px;
+      outline: none;
+      border: none;
+      margin-bottom: 2rem;
+      font-size: .8em;
+      color: $cinza-padrao;
+    }
+
+    .botao {
+      text-align: center;
+
+      button {
+        margin: auto;
+        padding: 15px 30px;
+        background: #30e66c;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #30e66c 0%, #1ebce5 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #30e66c 0%, #1ebce5 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #30e66c 0%, #1ebce5 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#30e66c', endColorstr='#1ebce5', GradientType=1);
+        font-weight: 600;
+        font-size: .8em;
+        text-align: center;
+        letter-spacing: 1px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: $branco;
+        text-decoration: none;
+
+        &:hover {
+          background: transparent;
+          border: 1px solid $cinza-padrao;
+          color: $cinza-padrao;
+          @include anima-slow()
+        }
+      }
+    }
+
+  }
+
+  @media(min-width:map-get($grid-breakpoints, md)) {
+    &__title {
+      @include make-col(4);
+      margin: 0;
+      text-align: left;
+    }
+
+    &__form {
+      padding-top: 0;
+      @include make-col(7);
+      margin-left: percentage(1/12);
+      justify-content: flex-end;
+
+      .botao {
+        text-align: right;
+      }
+    }
+  }
+
+}
+
+.rodape {
+  @extend .col-12;
+  padding: 0;
+  padding-bottom: 1rem;
+  text-align: center;
+  display: flex;
+
+  .esq {
+    @extend .col-12;
+    padding: 0;
+
+    p {
+      font-size: .9em;
+      color: $cinza-padrao;
+    }
+  }
+
+  .dir {
+    @extend .col-12;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      color: $cinza-padrao;
+      font-size: 1.3em;
+      margin-right: 10px;
+
+      &:hover {
+        color: $verde-padrao;
+      }
+    }
+
+  }
+
+  @media(min-width:map-get($grid-breakpoints, md)) {
+    .esq {
+      @include make-col(6);
+      text-align: left;
+    }
+
+    .dir {
+      @include make-col(6);
+      text-align: right;
+    }
+  }
 }

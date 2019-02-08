@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" href="dist/css/animate.min.css">
   <link rel="shortcut icon" href="dist/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
     crossorigin="anonymous">
@@ -40,10 +41,9 @@
               <ul>
                 <li class="item-hbg"> <a data-scroll href="#sobre-nos">Sobre nós</a></li>
                 <li class="item-hbg"> <a data-scroll href="#servicos">Serviços</a></li>
-                <li class="item-hbg"> <a data-scroll href="#clientes">Portfólio</a></li>
-                <li class="item-hbg"> <a data-scroll href="#equipe">Clientes</a></li>
-                <li class="item-hbg"> <a data-scroll href="#fale-conosco">Blog</a></li>
-                <li class="item-hbg"> <a class='contato' data-scroll href="#fale-conosco">Entre Em Contato</a></li>
+                <li class="item-hbg"> <a data-scroll href="#portfolio">Portfólio</a></li>
+                <li class="item-hbg"> <a data-scroll href="#portfolio">Clientes</a></li>
+                <li class="item-hbg"> <a class='contato' data-scroll href="#contato">Entre Em Contato</a></li>
               </ul>
             </div>
             <!-- /content-menu -->
@@ -68,7 +68,7 @@
         <div class="container">
           <div class="row no-gutters">
 
-            <div class="hero-section__title">
+            <div class="hero-section__title wow slideInLeft">
               <h2>Soluções inteligentes que geram grandes resultados.</h2>
               <p><strong>"Spark"</strong> é uma palavra de origem inglesa que significa faísca. Acreditamos que ela
                 representa o elemento necessário para o início das grandes mudanças.</p>
@@ -80,7 +80,7 @@
           </div>
 
         </div>
-        <div class="hero-section__img">
+        <div class="hero-section__img wow slideInRight">
           <img src="dist/img/ilustracao.png" alt="">
         </div>
       </div>
@@ -88,65 +88,58 @@
     <!-- HERO SECTION FINAL -->
 
     <section>
+      <div id="sobre-nos"></div>
       <div class="servicos">
         <div class="container">
           <div class="row no-gutters">
 
-            <div class="servicos__title">
+            <div class="servicos__title wow slideInLeft">
               <span class='welcome'>Sobre nós</span>
               <h2>Uma empresa focada no <i>desenvolvimento de soluções</i> e serviços de software</h2>
-              <p class='tagline'>Fundada em 2017, a Spark atua nas áreas de Desenvolvimento de Aplicações Web e
-                Mobile e consultorias. Nosso objetivo é
+              <p class='tagline'>Fundada em 2017, a Spark atua nas áreas de desenvolvimento de sites, sistemas
+                corporativos e consultorias. Nosso objetivo é
                 oferecer serviços de qualidade e impulsionar negócios utilizando as melhores tecnologias do mercado.</p>
               <p class="tagline">Entendemos do que fazemos, vamos acender a faísca do seu negócio?</p>
             </div>
 
 
-            <div class="missao-visao">
+            <div class="missao-visao wow slideInRight">
 
-              <div class="servicos__item">
+              <div class="servicos__item wow slideInLeft">
                 <div class="nome">
                   <img src="dist/img/mission.png" alt="">
                   <h4>Missão</h4>
                 </div>
                 <div class="descricao">
-                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod numquam eius modi tempora incidunt
+                  <p>Desenvolver a melhor experiência possível de soluções em software e gerar grandes resultados para
+                    nossos clientes
                   </p>
                 </div>
               </div>
 
-              <div class="servicos__item">
+              <div class="servicos__item wow slideInRight">
                 <div class="nome">
                   <img src="dist/img/vision.png" alt="">
                   <h4>Visão</h4>
                 </div>
                 <div class="descricao">
-                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod numquam eius modi tempora incidunt
+                  <p>Se tornar uma empresa referência no ramo de softwares no estado do Rio Grande do Norte, no
+                    Nordeste e no Brasil
                   </p>
                 </div>
               </div>
 
-              <div class="servicos__item">
+              <div class="servicos__item wow slideInLeft">
                 <div class="nome">
                   <img src="dist/img/value.png" alt="">
                   <h4>Valores</h4>
                 </div>
                 <div class="descricao">
-                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod numquam eius modi tempora incidunt
+                  <p>Excelência com simplicidade; Foco em resultados; Integridade com todos os públicos
                   </p>
                 </div>
               </div>
 
-              <div class="servicos__item">
-                <div class="nome">
-                  <img src="dist/img/goals.png" alt="">
-                  <h4>Objetivos</h4>
-                </div>
-                <div class="descricao">
-                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod numquam eius modi tempora incidunt
-                  </p>
-                </div>
-              </div>
 
             </div>
 
@@ -157,12 +150,240 @@
       </div>
     </section>
 
+    <section>
+
+      <div class="ajudar">
+        <div id="servicos"></div>
+        <div class="container">
+          <div class="row no-gutters">
+
+            <div class="ajudar__title">
+              <span>Nossa Expertise</span>
+              <h2>O que <i>podemos fazer</i> por você?</h2>
+            </div>
+
+            <div class="ajudar__conteudo">
+              <div class="ajudar__item wow fadeInDown">
+                <div class="thumb">
+                  <img src="dist/img/responsive.png" alt="Sites">
+                </div>
+
+                <div class="text">
+                  <h3>Sites</h3>
+                  <p>O cartão de visitas online de uma empresa é o seu site, pois é um dos primeiros canais de pesquisa
+                    sobre produtos e serviços antes de efetuar uma compra</p>
+                </div>
+              </div>
+
+              <div class="ajudar__item wow fadeInDown">
+                <div class="thumb">
+                  <img src="dist/img/computer.png" alt="Sites">
+                </div>
+
+                <div class="text">
+                  <h3>Sistemas Corporativos</h3>
+                  <p>Você tem uma ideia para um sistema? sua empresa precisa de um sistema para suprir alguma
+                    necessidade, ou solucionar algum problema? a resposta dessa pergunta é que nós oferecemos esse
+                    serviço.</p>
+                </div>
+              </div>
+
+              <div class="ajudar__item wow fadeInDown">
+                <div class="thumb">
+                  <img src="dist/img/mobile-app.png" alt="Sites">
+                </div>
+
+                <div class="text">
+                  <h3>Aplicativos para Celular</h3>
+                  <p>Se você tem uma ideia e quer executar, ou se simplesmente quer criar um aplicativo para sua
+                    empresa, nós desenvolvemos ele de forma nativa com as melhores tecnologias que o mercado oferece.</p>
+                </div>
+              </div>
+
+            </div>
 
 
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="processo">
+        <div class="container">
+          <div class="row no-gutters">
+
+            <div class="processo__title">
+              <span>Processo de Trabalho</span>
+              <h2>Nós executamos <i>cada passo</i> cuidadosamente</h2>
+            </div>
+
+            <div class="processo__conteudo">
+
+              <div class="processo__item wow fadeInDown">
+                <img src="dist/img/idea.png" alt="">
+                <h3>01. <strong>Especificação</strong></h3>
+              </div>
+
+              <div class="processo__item wow fadeInDown">
+                <img src="dist/img/prototype.png" alt="">
+                <h3>02. <strong>Construção</strong></h3>
+              </div>
+
+              <div class="processo__item wow fadeInDown">
+                <img src="dist/img/validate.png" alt="">
+                <h3>03. <strong>Validação</strong></h3>
+              </div>
+
+              <div class="processo__item wow fadeInDown">
+                <img src="dist/img/launch.png" alt="">
+                <h3>04. <strong>Execução</strong></h3>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
 
+    <section>
+      <div id="portoflio"></div>
+      <div class="portfolio">
+        <div class="container">
+          <div class="row no-gutters">
 
+            <div class="portfolio__title wow slideInLeft">
+              <span class='welcome'>Cases de Sucesso</span>
+              <h2>Projetos que tivemos o <i>prazer de executar</i></h2>
+              <p class='tagline'>Conheça alguns projetos desenvolvidos por nós, utilizando as melhores tecnologias do
+                mercado para nossos clientes</p>
+            </div>
+
+            <div class="portfolio__conteudo wow slideInRight">
+
+              <div class="owl-carousel owl-theme">
+
+                <div class="item">
+
+                  <div class="img">
+                    <img src="dist/img/rodrigo-pires.png" alt="">
+                  </div>
+
+                  <div class="info">
+                    <h3>NossoPires</h3>
+                    <!-- <p>Rodrigo Pires é um empreendedor e palestrante do norte do Brasil, sócio da PWS Publicidade, ROWD
+                      Produções e DONN Barbearia. Desenvolvemos seu site, totalmente responsivo, com as melhores
+                      técnicas
+                      de SEO e com um gerenciador de conteúdo poderoso!</p> -->
+                  </div>
+
+                  <div class="link">
+                    <a href="#"><i class="fas fa-external-link-alt"></i> www.nossopires.com.br</a>
+                  </div>
+
+                </div>
+
+                <div class="item">
+
+                  <div class="img">
+                    <img src="dist/img/raideno-store.png" alt="">
+                  </div>
+
+                  <div class="info">
+                    <h3>Raideno Store</h3>
+                    <!-- <p>Raideno é um dos maiores produtores audiviosuais de BH. O mesmo também é influencer na área e
+                      construimos um ecommerce para venda de seus produtos.</p> -->
+                  </div>
+
+                  <div class="link">
+                    <a href="#"><i class="fas fa-external-link-alt"></i> www.raideno.com/store</a>
+                  </div>
+
+                </div>
+
+                <div class="item">
+
+                  <div class="img">
+                    <img src="dist/img/acre2050.png" alt="">
+                  </div>
+
+                  <div class="info">
+                    <h3>Acre2050</h3>
+                    <!-- <p>Raideno é um dos maiores produtores audiviosuais de BH. O mesmo também é influencer na área e
+                      construimos um ecommerce para venda de seus produtos.</p> -->
+                  </div>
+
+                  <div class="link">
+                    <a href="#"><i class="fas fa-external-link-alt"></i> www.acre2050.com.br</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="contato"></div>
+      <div class="contato">
+        <div class="container">
+          <div class="row no-gutters">
+
+            <div class="contato__title wow slideInLeft">
+              <span class='contato'>Entre em Contato</span>
+              <h2>Vamos iniciar um projeto?</h2>
+              <p class='tagline'>Manda uma mensagem pra gente, fale um pouco sobre seu projeto que te retornaremos em
+                breve</p>
+            </div>
+
+            <div class="contato__form wow slideInRight">
+              <form action="">
+                <input type="text" name="name" placeholder="Digite seu nome completo">
+                <input type="text" name="company" placeholder="Digite o nome da sua empresa">
+                <input type="email" name="email" placeholder="Digite o seu email">
+                <textarea name="message" cols="5" placeholder="Digite sua mensagem"></textarea>
+                <div class="botao">
+                  <button>Enviar</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="rodape">
+      <div class="container">
+        <div class="row no-gutters">
+
+          <div class="esq">
+            <p>© 2019 Spark Soluções Inteligentes</p>
+          </div>
+
+          <div class="dir">
+            <a href=""><i class="fas fa-envelope"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -172,6 +393,14 @@
   <script src="dist/js/app.js"></script>
   <script src="dist/js/jquery-ui.min.js"></script>
   <script src="dist/js/owl.carousel.js"></script>
+  <script src="dist/js/smooth-scroll.min.js"></script>
+  <script>
+    smoothScroll.init();
+  </script>
+  <script src="dist/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </body>
 
